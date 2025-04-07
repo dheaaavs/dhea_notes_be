@@ -19,7 +19,7 @@ steps:
   #       --allow-unauthenticated' \
   #
   # Keterangan:
-  # "gcloud run deploy be": Perintah yang digunakan untuk mendeploy service ke cloud run dengan nama "notes_be"
+  # "gcloud run deploy be": Perintah yang digunakan untuk mendeploy service ke cloud run dengan nama "notes-be"
   # "--image 'gcr.io/$PROJECT_ID/notes-be'": Image yang akan di-deploy
   # "--timeout 1000s": Mengatur waktu maksimum loading menjadi 1000s
   # "--port 5000": Mengatur port yang akan digunakan (disamakan dengan port yg di-listen oleh server)
@@ -30,7 +30,7 @@ steps:
       [
         "run",
         "deploy",
-        "notes_be",
+        "notes-be-dhea",
         "--image",
         "gcr.io/$PROJECT_ID/notes-be",
         "--timeout",
